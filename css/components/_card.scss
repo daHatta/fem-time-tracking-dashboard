@@ -1,0 +1,144 @@
+@use "../abstracts" as *;
+
+.card__display {
+    margin-block-start: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.625em;
+}
+
+.card__wrapper {
+    border-radius: 14px;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+    padding-block-start: 2.375em;
+    background-repeat: no-repeat;
+    background-position: top -10px right 17px;
+}
+
+// card wrapper variants
+.work {
+    background-color: $clr-pry-light-red-work;
+    background-image: url("../../images/icon-work.svg");
+}
+
+.play {
+    background-color: $clr-pry-soft-blue-play;
+    background-image: url("../../images/icon-play.svg");
+}
+
+.study {
+    background-color: $clr-pry-light-red-study;
+    background-image: url("../../images/icon-study.svg");
+}
+
+.exercise {
+    background-color: $clr-pry-lime-green-exercise;
+    background-image: url("../../images/icon-exercise.svg");
+}
+
+.social {
+    background-color: $clr-pry-violet-social;
+    background-image: url("../../images/icon-social.svg");
+}
+
+.self-care {
+    background-color: $clr-soft-orange-self-care;
+    background-image: url("../../images/icon-self-care.svg");
+}
+
+.card__content {
+    background-color: $clr-ntr-dark-blue;
+    border-radius: 14px;
+    padding-block-start: 1.75em;
+    padding-block-end: 1.375em;
+    padding-inline: 1.5em;
+}
+
+.card__content:hover {
+    background-color: $clr-card-hover;
+    cursor: pointer;
+}
+
+.card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__title {
+    margin-block-start: 0;
+    font-size: $fs-500;
+    font-weight: $fw-light;
+}
+
+.card__menu {
+    display: flex;
+    align-items: center;
+}
+
+.card__menu:hover path {
+    fill: $clr-ntr-white;
+}
+
+.time__spend {
+    margin-block-start: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time__current {
+    font-size: 2rem;
+    font-weight: $fw-light;
+    line-height: 1.6;
+}
+
+.time__previous {
+    color: $clr-ntr-pale-blue;
+    font-size: 1rem;
+    font-weight: $fw-light;
+}
+
+
+@media screen and (min-width: 1440px) {
+    
+    .card__display {
+        margin-block-start: 0;
+        margin-inline-start: 1.875em;
+        grid-template-columns: repeat(3, 255px);
+        gap: 1.875em;
+    }
+
+    .card__wrapper {
+        padding-block-start: 2.813em;
+        background-position: top -10px right 17px;
+        background-size: 33%;
+    }
+
+    .card__title {
+        font-weight: $fw-medium;
+    }
+
+    .card__content {
+        padding-block-start: 1.813em;
+        padding-block-end: 1.938em;
+        padding-inline: 2em;
+    }
+
+    .time__spend {
+        margin-block-start: 1.25em;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .time__current {
+        font-size: 3.5rem;
+        line-height: 1.4;
+    }
+
+    .time__previous {
+        font-size: .875rem;
+    }
+
+}

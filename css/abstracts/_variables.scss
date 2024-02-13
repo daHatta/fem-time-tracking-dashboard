@@ -1,0 +1,32 @@
+// LAYOUT
+$mq-mobile: 375px;
+$mq-desktop: 1440px;
+
+// COLORS
+$clr-pry-blue: hsl(246, 80%, 60%);
+
+$clr-pry-light-red-work: hsl(15, 100%, 70%);
+$clr-pry-soft-blue-play: hsl(195, 74%, 62%);
+$clr-pry-light-red-study: hsl(348, 100%, 68%);
+$clr-pry-lime-green-exercise: hsl(145, 58%, 55%);
+$clr-pry-violet-social: hsl(264, 64%, 52%);
+$clr-soft-orange-self-care: hsl(43, 84%, 65%);
+
+$clr-ntr-very-dark-blue: hsl(226, 43%, 10%);
+$clr-ntr-dark-blue: hsl(235, 46%, 20%);
+$clr-ntr-desaturated-blue: hsl(235, 45%, 61%);
+$clr-ntr-pale-blue: hsl(236, 100%, 87%);
+
+$clr-ntr-white: hsl(240, 100%, 100%);
+
+$clr-card-hover: hsl(236, 41%, 34%);
+
+// TYPO
+$fs-400: 1rem; /* 16px */
+$fs-500: 1.125rem; /* 18px (card titles e.g. Work, Play) */
+
+$ff-rubik: "Rubik", sans-serif;
+
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;

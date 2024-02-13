@@ -1,0 +1,16 @@
+@use "../abstracts" as *;
+
+body {
+    margin: 0;
+    background-color: $clr-ntr-very-dark-blue;
+    color: $clr-ntr-white;
+    font-family: $ff-rubik;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    margin-block-end: 3em;
+}

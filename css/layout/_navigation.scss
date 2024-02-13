@@ -1,0 +1,33 @@
+@use "../abstracts" as *;
+
+.nav {
+    padding-block: 1.313em;
+    padding-inline: 1.813em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav__link {
+    color: $clr-ntr-pale-blue;
+    text-decoration: none;
+    font-size: $fs-500;
+    font-weight: $fw-light;
+}
+
+.nav__link:hover,
+.nav__link:focus-visible {
+    color: $clr-ntr-white;
+}
+
+@media screen and (min-width: 1440px) {
+    
+    .nav {
+        flex-direction: column;
+        align-items: start;
+        padding-block: 1.5em 1.75em;
+        gap: 1em;
+    } 
+    
+
+}
