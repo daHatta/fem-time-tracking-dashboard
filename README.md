@@ -113,6 +113,8 @@ I will definitely look out for more challenges where JavaScript is involved.
 - [Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) - Documentation about Template Literals by **Modzilla**.
 - [grid](https://developer.mozilla.org/en-US/docs/Web/CSS/grid) - Nice source to learn about _grid_.
 - [flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) - Nice source to learn about _flexbox_.
+- [Links must have discernible text](https://dequeuniversity.com/rules/axe/4.6/link-name) - Artikel about accessible links by **Deque University**.
+- [Accessible SVGs](https://css-tricks.com/accessible-svgs/) - Great Artikel about accessible SVGs by **Heather Migliorisi**.
 - [Google Fonts](https://fonts.google.com/specimen/Rubik) - Font _Rubik_ used.
 
 ## Author
