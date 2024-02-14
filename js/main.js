@@ -14,7 +14,7 @@ const getData = async () => {
     let data;
     
     try {
-        response = await fetch("../data.json");
+        response = await fetch("https://dahatta.github.io/fem-time-tracking-dashboard/data.json");
     } catch (error) {
         if (error instanceof SyntaxError) {
             console.log("There was a SyntaxError", error);
