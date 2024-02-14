@@ -78,13 +78,13 @@ const displayCardsByTimeframe = async (timeframe) => {
                         </a>
                     </div>
                     <div class="time__spend">
-                        <span class="time__current">${captures.current} ${(captures.current > 1) ? "hrs" : "hr"}</span>
-                        <span class="time__previous">Last ${unit} - ${captures.previous} ${(captures.previous > 1) ? "hrs" : "hr"}</span>
+                        <span class="time__current">${captures.current}${(parseInt(captures.current) > 1) ? "hrs" : "hr"}</span>
+                        <span class="time__previous">Last ${unit} - ${captures.previous}${(parseInt(captures.previous) > 1) ? "hrs" : "hr"}</span>
                     </div>
                 </div>
             </div>
             `;
-    }).join("");
+        }).join("");
 
     cardDisplay.innerHTML = dataDisplay;
 
