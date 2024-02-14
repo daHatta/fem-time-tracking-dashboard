@@ -9,8 +9,25 @@ const cardDisplay = document.querySelector(".card__display");
 
 // Fetch data from json file
 const getData = async () => {
-    const response = await fetch("../data.json");
-    const data = await response.json();
+    
+    let response;
+    
+    try {
+        response = await fetch("../data.json");
+    } catch (error) {
+        if (error instanceof SyntaxError) {
+            console.log("There was a SyntaxError", error);
+        } else {
+            console.log("There was an error", error);
+        }
+    }
+
+    if(response?.ok) {
+        const data = await response.json();
+    } else {
+        console.log(`HTTP Response Code: ${response?.status}`);
+    }
+
     return data;
 }
 
