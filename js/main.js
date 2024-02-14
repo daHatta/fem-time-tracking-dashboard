@@ -30,7 +30,7 @@ const getData = async () => {
     }
 
     return data;
-}
+};
 
 // Display cards based on timeframe
 const displayCardsByTimeframe = async (timeframe) => {
@@ -39,7 +39,7 @@ const displayCardsByTimeframe = async (timeframe) => {
 
     const payload = await getData();
 
-    // Map over data from json file
+    // Map over data from json file and return all Template literals as a String
     let dataDisplay = payload.map((card) => {
 
         let title = card.title;
@@ -83,12 +83,12 @@ const displayCardsByTimeframe = async (timeframe) => {
                     </div>
                 </div>
             </div>
-            `
+            `;
     }).join("");
 
     cardDisplay.innerHTML = dataDisplay;
 
-}
+};
 
 // Helper Function to remove all active classes from Nav Links
 const removeActive = () => {

@@ -18,7 +18,6 @@
 # Excluded files and folders
 design
 info.txt
-README-template.md
-README.md
+README-info.md
 style-guide.md
 
