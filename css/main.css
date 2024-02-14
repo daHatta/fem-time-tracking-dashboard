@@ -108,6 +108,11 @@ footer {
     align-items: center;
   }
 }
+/* ---------------- ABSTRACT ----------------- */
+.nav__link.active {
+  color: hsl(240, 100%, 100%);
+}
+
 /* ---------------- COMPONENTS ---------------- */
 /* ---------------- ABSTRACT ----------------- */
 .card__display {

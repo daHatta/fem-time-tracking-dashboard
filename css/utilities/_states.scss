@@ -1,0 +1,5 @@
+@use "../abstracts" as *;
+
+.nav__link.active {
+    color: $clr-ntr-white;
+}
