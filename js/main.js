@@ -11,6 +11,7 @@ const cardDisplay = document.querySelector(".card__display");
 const getData = async () => {
     
     let response;
+    let data;
     
     try {
         response = await fetch("../data.json");
@@ -23,7 +24,7 @@ const getData = async () => {
     }
 
     if(response?.ok) {
-        const data = await response.json();
+        data = await response.json();
     } else {
         console.log(`HTTP Response Code: ${response?.status}`);
     }
