@@ -49,15 +49,15 @@ const displayCardsByTimeframe = async (timeframe) => {
         if (query === "daily") {
             const { timeframes: { daily } } = card;
             captures = daily;
-            unit = "day";
+            unit = "Day";
         } if (query === "weekly") {
             const { timeframes: { weekly } } = card;
             captures = weekly;
-            unit = "week";
+            unit = "Week";
         } if (query === "monthly") {
             const { timeframes: { monthly } } = card;
             captures = monthly;
-            unit = "month";
+            unit = "Month";
         }
 
         let cssClass = card.title.replace(/\s+/g, "-").toLowerCase();
@@ -78,8 +78,8 @@ const displayCardsByTimeframe = async (timeframe) => {
                         </a>
                     </div>
                     <div class="time__spend">
-                        <span class="time__current">${captures.current}${(captures.current > 1) ? "hrs" : "hr"}</span>
-                        <span class="time__previous">Last ${unit} - ${captures.previous}${(captures.previous > 1) ? "hrs" : "hr"}</span>
+                        <span class="time__current">${captures.current} ${(captures.current > 1) ? "hrs" : "hr"}</span>
+                        <span class="time__previous">Last ${unit} - ${captures.previous} ${(captures.previous > 1) ? "hrs" : "hr"}</span>
                     </div>
                 </div>
             </div>
