@@ -49,7 +49,19 @@ Users should be able to:
 ### What I learned
 
 Beside the challenges building the dashboard with css and html, the most interesting thing I learned was
-the switch between the daily, weekly and monthly data.
+the switch between the daily, weekly and monthly data. I also learned some new aspects concerning accessibility
+in the markup.
+
+Links must contain readable text and labeled:
+
+```html
+<a class="card__menu" aria-label="Change options in the card menu" href="#">
+  Card Menu
+  <svg role="img" width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+    <!-- ... -->
+  </svg>
+</a>
+```
 
 I used Template literals to fill in the extracted information according to the cards:
 
